@@ -21,10 +21,10 @@ from gfn.gflownet import TBGFlowNet
 from gfn.samplers import Sampler
 
 from gfn.preprocessors import Preprocessor
-from gfn.gym.balanced_parentheses import BalancedParentheses
+from envs.balanced_parentheses import BalancedParentheses
 from gfn.gym.bitSequence import BitSequenceStates
 #from src.algos import train_tb, train_lggfn, train_sagfn
-from gfn.gym.tb import train_tb
+from algos.tb import train_tb
 
 
 
