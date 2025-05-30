@@ -23,8 +23,10 @@ from gfn.samplers import Sampler
 from gfn.preprocessors import Preprocessor
 from envs.balanced_parentheses import BalancedParentheses
 from gfn.gym.bitSequence import BitSequenceStates
-#from src.algos import train_tb, train_lggfn, train_sagfn
+from algos.lggfn import train_lggfn
 from algos.tb import train_tb
+from algos.sagfn import train_sagfn
+
 
 
 
@@ -120,7 +122,7 @@ class MLP_ENN(nn.Module):
 
         if self.stop_gradient:
             features_at_mask = features_at_mask.detach()
-
+{}
         # Sample z ∈ ℝ^index_dim
         z = torch.randn(self.index_dim, dtype=torch.float32, device=transformer_features.device)
 
