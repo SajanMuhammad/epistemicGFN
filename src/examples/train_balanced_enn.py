@@ -122,8 +122,8 @@ class MLP_ENN(nn.Module):
 
         if self.stop_gradient:
             features_at_mask = features_at_mask.detach()
-{}
-        # Sample z ∈ ℝ^index_dim
+
+        
         z = torch.randn(self.index_dim, dtype=torch.float32, device=transformer_features.device)
 
         output_dim = base_logits.shape[1]  # dynamically detect vocab/action size
