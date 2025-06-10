@@ -36,6 +36,3 @@ plt.legend(prop={'weight': 'bold', 'size': 24}, loc='best')
 plt.tight_layout()
 plt.grid(True)
 plt.show()
-
-
-
