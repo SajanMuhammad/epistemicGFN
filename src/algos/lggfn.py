@@ -1,3 +1,4 @@
+# This code is adapted from: https://github.com/Idriss-Malek/Loss-Guided-GFN
 import torch
 from tqdm import tqdm
 
