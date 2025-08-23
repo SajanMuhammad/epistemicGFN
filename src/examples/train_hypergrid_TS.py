@@ -1,4 +1,4 @@
-
+#This code is modified from: https://github.com/GFNOrg/torchgfn
 
 import datetime
 import os
